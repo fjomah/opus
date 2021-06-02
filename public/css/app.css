@@ -1,0 +1,1457 @@
+body, html {
+    font-family: "segoe ui", "Roboto", "Open Sans", arial, serif;
+	height: 100%;
+}
+
+body {
+	font-size: 14px;
+	line-height: 1.5;
+	color: #333333;
+	background-color: #fff;
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+}
+
+a {
+	color: #333333;
+}
+
+a:hover {
+	color: #333333;
+}
+
+a:focus {
+	text-decoration: none;
+}
+
+pre {
+    padding: 12px;
+    border-radius: 2px;
+    margin-bottom: 0;
+}
+
+input, select, textarea {
+	box-shadow: none !important;
+	border-radius: 3px !important;
+	border-width: 1px !important;
+}
+
+input[type="email"], input[type="number"], input[type="password"], input[type="tel"], input[type="url"], input[type="text"] {
+	height: 38px !important;
+}
+
+.v-center {
+	display: flex;
+	align-items: center;
+}
+
+.side-menu {
+	overflow: auto;
+	position: fixed;
+	height: calc(100% - 50px);
+	left: 0;
+	top: 50px;
+	width: 248px;
+    background: #fbfbfb;
+	border-right: 1px solid #eee;
+}
+
+.side-menu.create-wiki {
+	width: 60px;
+	z-index: 100;
+}
+
+.side-menu-top {
+	margin-top: 10px;
+	margin-top: 15px;
+}
+
+.side-menu-inner {
+    padding: 0px 9px;
+}
+
+.side-menu-top .icon {
+	margin-right: 10px;
+}
+
+.side-menu .nav-header {
+	color: #9c9c9c;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.side-menu-top .item.active a {
+	background-color: initial;
+	font-weight: 500;
+}
+
+.side-menu-top .item a {
+	color: #666;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 27px;
+    padding: 5px 5px;
+    width: 100%;
+    display: block;
+    display: flex;
+    align-items: center;
+}
+
+.side-menu-top .item:hover a, .side-menu-wiki-list .item:hover a, .side-menu-top .item.active, #categories-list li.active a {
+	background-color: #f3f3f3 !important;
+	text-decoration: none;
+}
+
+.recent-wikis-list li.item:hover a {
+	background-color: rgba(245, 245, 245, 0.69) !important;
+	text-decoration: none;
+}
+
+.recent-wikis-list li {
+	border-bottom: 1px solid #eee;
+}
+
+.recent-wikis-list li:last-child {
+	border-bottom: 0px;
+}
+
+.tooltip {
+    z-index: 10000 !important;
+}
+
+.tooltip.bottom {
+     margin-top: 0px; 
+}
+
+.tooltip-inner {
+    max-width: 200px;
+    padding: 3px 8px;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    background-color: #121518;
+    font-size: 11px;
+}
+
+.side-menu-wiki-list li.item a, .recent-wikis-list li.item a {
+	color: #666;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 27px;
+    padding: 5px 5px;
+    width: 100%;
+    display: block;
+    display: flex;
+    align-items: center;
+}
+
+.side-menu-wiki-list li.item .wiki-name, .recent-wikis-list li.item .wiki-name {
+	/*position: relative;
+	top: 3px;*/
+	margin-bottom: 0;
+}
+
+.navbar-inner {
+    min-height: 0px;
+}
+
+.main-menu .navbar-nav>.open>a, .main-menu .navbar-nav>.open>a:focus, .main-menu .navbar-nav>.open>a:hover {
+    background-color: initial !important;
+}
+
+@media (max-width: 778px) {
+	.main-menu .navbar-nav>li>a {
+	    line-height: 30px !important;
+	    height: 30px !important;
+	    padding-top: 0;
+	}	
+}
+
+.main-menu {
+	font-size: 13px;
+    border-color: #eee;
+    height: 50px;
+    min-height: 50px;
+	box-shadow: 0px 0px 0px black;
+    background: #fbfbfb;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+.navbar-form {
+    line-height: 40px;
+    margin: 0px;
+}
+
+.dropdown-menu>li>a:hover {
+    background-color: #777 !important;
+    text-decoration: none;
+    color: #fff;
+}
+
+.dropdown-menu-right:before {
+	position: absolute;
+	top: -7px;
+	right: 15px;
+	display: inline-block;
+	border-right: 7px solid transparent;
+	border-bottom: 7px solid #fff;
+	border-left: 7px solid transparent;
+	border-bottom-color: rgba(0, 0, 0, 0.2);
+	content: '';
+}
+
+.dropdown-menu-right:after {
+	position: absolute;
+	top: -6px;
+	right: 16px;
+	display: inline-block;
+	border-right: 6px solid transparent;
+	border-bottom: 6px solid #fff;
+	border-left: 6px solid transparent;
+	content: '';
+}
+
+.dropdown-menu.white-pointer:after {
+	border-bottom: 7px solid #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+
+.no-container {
+	margin: 0;
+}
+
+.aside-content {
+	margin-left: 260px;
+	margin-top: 20px;
+}
+
+.create-wiki-aside {
+	margin-left: 0px;
+	padding-bottom: 15px;
+}
+
+.page-header {
+	margin: 0;
+}
+
+.page-header .icon {
+    margin-right: 4px;
+    font-size: 20px;
+    position: relative;
+    top: -2px;
+}
+
+.page-header {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.events-list .event {
+    margin: 0;
+    padding: 12px 8px;
+    border-top: 1px solid #eee;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.events-list .event:first-child {
+	border-top: 0px !important;
+}
+
+.events-list .event:hover {
+    background-color: #F9F9F9;
+}
+
+.events-list .event .event-icon {
+	margin-right: 6px;
+	color: #666;
+}
+
+.events-list .event .event-top {
+	margin-bottom: 5px;
+}
+
+.events-list .event .event-user-image {
+	margin-right: 7px;
+}
+
+.recent-wikis-list {
+	margin-bottom: 0;
+}
+
+.recent-wikis-list .media-body {
+	display: table-row;
+}
+
+.side-menu-wiki-list .cateogry-icon {
+	border-radius: 50%;
+	width: 13px;
+	height: 13px;
+	display: inline-block;
+	vertical-align: -3px;
+	margin-left: 1px;
+	background: #e7edf3;
+}
+
+/********************************* CKEEDITOR ************************************/
+
+.cke_source {
+	font-family: consolas !important;
+	font-size: 15px !important;
+}
+
+label {
+	font-weight: 500;
+	font-size: 14px;
+	color: #676a6c;
+}
+
+.cke_chrome {
+	border: none !important;
+	border-bottom: 1px solid #d1d1d1 !important;
+}
+
+.actions-btn li:last-child {
+	padding-right: 0px;
+}
+
+.create-wiki-aside .page-header {
+	margin-bottom: 20px;	
+}
+
+.btn-link:hover {
+	text-decoration: none;
+}
+
+/************************ Read List **************************************/
+
+.read-list-con {
+	padding: 0; 
+}
+
+.read-list-con .read-list-item {
+	border-left: 0 !important;
+	border-right: 0 !important;
+	border-radius: 0 !important;
+}
+
+.read-list-con .read-list-item.active .text-muted, .read-list-con .read-list-item.active .icon {
+	color: #fff;
+}
+
+.read-list-con .read-list-item:first-child {
+	border-top: 0;
+}
+
+.read-list-con .read-list-item:last-child {
+	border-bottom: 0;
+	border-radius: 4px !important;
+}
+
+.read-list-con .read-list-item .item-name {
+	margin-bottom: 4px;
+}
+
+.read-list-con .read-list-item .item-description {
+	font-size: 13px;
+}
+
+.read-list-con .read-list-item .icon {
+	color: #b9b9b9;
+}
+
+.read-list-item-detail .list-group-item {
+	border-radius: 0 !important; 
+	border-left: 0;
+	border-right: 0;
+}
+
+.read-list-item-detail .list-group-item:first-child {
+	border-top: 0;
+}
+
+.read-list-item-detail .list-group-item:last-child {
+	border-bottom: 0;
+}
+
+.read-list-item-detail h5, .read-list-con .read-list-item .item-name {
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.read-list-item-detail p {
+	margin-bottom: 6px;
+}
+
+.wikis-list .wikis-list-item:first-child {
+	border-top: 0px;
+}
+
+.wikis-list .wikis-list-item:last-child {
+	border-bottom: 0px;
+}
+
+.wikis-list .wikis-list-item {
+	border-left: none;
+	border-right: none;
+	padding: 12px 8px;
+	border-color: #eee;
+	border-radius: 0px;
+}
+
+.wikis-list .wikis-list-item .media-heading {
+	font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #333
+}
+
+.wiki-item-heading-bottom {
+	font-size: 13px;
+	font-weight: 500;
+	color: #777;
+	margin-bottom: 6px;
+}
+
+.wiki-item-heading-bottom .person-name {
+	font-weight: 700;
+}
+
+.wiki-item-description {
+	color: #777;
+	font-size: 13px;
+    margin-bottom: 9px;
+}
+
+.item-category-label {
+	border-radius: 2px;
+    padding: 2px 10px;
+    color: #333;
+    font-size: 11px;
+    background: #e8e8e8;
+    text-transform: uppercase;
+}
+
+.form-group.with-icon {
+    position: relative !important;
+}
+
+.has-error.with-icon .icon {
+	color: #a94442;
+}
+
+.form-group.with-icon input {
+    padding-right: 2.2em !important;
+}
+
+.form-group.with-icon .icon {
+	cursor: default;
+    position: absolute;
+    line-height: 1.2em;
+    text-align: center;
+    top: 0;
+    right: 0;
+    margin: 0;
+    height: 100%;
+    width: 2.67142857em;
+    opacity: .5;
+}
+
+.form-group.with-icon .icon:before {
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    margin-top: -.5em;
+}
+
+.team-setting, .wiki-setting {
+	margin-top: 30px;
+	position: relative;
+	left: -8px;
+	width: 800px; 
+	margin: auto;
+}
+
+.team-setting .team-setting-header, .wiki-setting .wiki-setting-header {
+	margin-bottom: 34px;
+	margin-top: 34px;
+	font-size: 28px;
+	font-weight: 500;
+	text-align: center;
+}
+
+.team-general-setting, .user-general-setting {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.team-general-setting .heading h1, .user-general-setting .heading h1 {
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.team-info h2, 
+.team-logo h2, 
+.delete-team h2, 
+.team-members h2, 
+.profile-pic-setting h2,
+.user-info h2,
+.wiki-info h2, .s-group-header .header h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.team-info, .team-logo, .delete-team, .team-members, .profile-pic-setting, .user-info, .wiki-info {
+    margin-top: 40px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 40px;
+    min-height: 110px;
+}
+
+.s-groups-con {
+	margin-top: 22px;
+}
+
+.s-group-header {
+	margin-bottom: 20px;
+}
+
+.s-group-header .header h2 {
+	position: relative;
+	top: 8px;
+	margin-bottom: 0;
+}
+
+.s-groups-body .group-name .name-inner {
+	font-weight: 500;
+}
+
+.s-group-item {
+	margin-bottom: 28px;
+}
+
+.s-groups-body .group-name .label {
+	margin-left: 15px;
+	position: relative;
+	top: -1px;
+}
+
+.group-members-con .group-member-item {
+	margin-top: 15px;
+}
+
+.group-members-con .group-member-item:nth-last-child(n+3) {
+	margin-top: 10px;
+}
+
+.group-members-con .group-member-item .group-member-img {
+	padding-right: 20px;
+}
+
+.group-members-con .group-member-item .group-member-img img {
+	border-radius: 3px;
+}
+
+.group-members-con .group-member-name {
+	font-size: 13px;
+	margin-bottom: 3px;
+}
+
+.s-groups-con .s-group-header .create-group-btn {
+	font-size: 13px;
+	color: #333333;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
+
+.s-groups-con .s-group-header .create-group-btn:hover {
+	background: #ddd;
+}
+
+.team-info .action-info, .upload-team-logo, .delete-team .action-info, .wiki-info .action-info {
+    max-width: 400px;
+    margin-bottom: 15px;
+}
+
+.team-members {
+    border-bottom: 0; 
+}
+
+.member-list .member-name {
+    font-size: 16px;
+}
+
+.member-list  .member-role {
+    font-size: 10px;
+}
+
+.member-list .member-list-item {
+	padding: 10px 15px;
+	margin: 0;
+	display: flex;
+	align-items: center;
+}
+
+.member-list .member-list-item:hover {
+	color: #555;
+    background-color: #f5f5f5;
+}
+
+.member-list .member-list-item .user-info-con {
+	margin-left: 10px;
+}
+
+.user-profile .user-image {
+	margin-bottom: 25px;
+}
+
+.user-profile .user-detail .header {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.user-profile .user-detail .icon {
+	margin-right: 5px;
+}
+
+#avatar-upload-form .heading {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.avatar-upload-form-con {
+    padding-left: 20px;
+}
+
+@media (max-width: 830px) {
+    .user-general-setting {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+.user-info .heading {
+    margin-bottom: 3px;
+}
+
+.user-info .text-muted {
+    margin-bottom: 15px;
+}
+
+.profile-pic-setting .upload-btn {
+	margin-bottom: 5px;
+}
+
+.side-menu .side-menu-inner .wiki-intro .header {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.side-menu .side-menu-inner .wiki-intro {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.wiki-contributer-list {
+	margin-bottom: 0;
+}
+
+.wiki-contributer-list li {
+	margin-bottom: 12px;
+}
+
+.main-menu .overall-search-input {
+	width: 250px;
+    background-color: #ffffff;
+    border: none;
+    border: 1px solid #eee;
+    color: #333;
+    padding-left: 0;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.main-menu .overall-search-input:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+
+.media-object {
+    margin: 0px 0px 0px 0px;
+}
+
+.comments .comment .comment-time {
+	font-size: 12px;
+    margin-left: 5px;
+}
+
+.comments .comment .user-mention {
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+.comments .comment .user-name {
+	font-size: 1em;
+    color: rgba(0,0,0,.87);
+    font-weight: 500;
+    -webkit-text-stroke: 0.02px;
+}
+
+.comments .comment .user-name a:hover {
+    color: rgba(0,0,0,.87);
+}
+
+.comments .comment .profile-image {
+border-radius: 3px;
+}
+
+.comments .comment .profile-image-con {
+    padding-right: 20px;
+}
+
+.comments .comment .comment-body .comment-content {
+    margin: .25em 0 0em;
+    font-size: 1em;
+    word-wrap: break-word;
+    color: rgba(0,0,0,.87);
+    line-height: 1.3;
+}
+
+.comments .comment {
+	padding: 9px 0px;
+}
+
+.comments .comment:first-child {
+	padding-top: 0;
+}
+
+.comments .comment:last-child {
+	padding-bottom: 0;
+}
+
+.wiki-comments-con {
+    padding: 0px 15px;
+}
+
+.wiki-comments-con .comments {
+	padding: 15px 0px;
+}
+
+.wiki-comment-form {
+    margin-bottom: 12px;
+}
+
+.side-menu .wiki-side-menu {
+	position: relative;
+	height: calc(100% - 2px);
+}
+
+.wiki-side-menu .wiki-setting-bottom {
+    position: absolute;
+    bottom: 0px;
+    background-color: #fbfbfb;
+    width: 100%;
+    padding: 6px;
+    border-top: 1px solid #eee;
+}
+
+.wiki-side-menu .side-menu-inner {
+	overflow: auto;
+    height: calc(100% - -2px);
+}
+
+.wiki-setting-bottom .wiki-setting-button {
+	font-size: 14px;
+	font-family: "segoe ui";
+	background-color: #fbfbfb;
+    padding: 8px 8px;
+    border-radius: 2px;
+    font-weight: 400;
+    text-transform: uppercase;
+	position: relative;
+	top: 0.5px;
+}
+
+.wiki-setting-button img {
+	position: relative; 
+	top: -2px; 
+	right: 5px;
+}
+
+.wiki-setting-bottom .wiki-setting-button:hover {
+	background-color: #eee;
+	text-decoration: none;
+	border: 1px solid #ddd;
+	box-shadow: none;
+}
+
+.home-nav-con {
+	margin-bottom: 0;
+	padding: 15px 0px;
+}
+
+
+.home-nav-con .navbar-brand {
+    padding: 0px 15px;
+}
+
+ul.home-nav li a {
+	font-size: 14px;
+	font-weight: 600;
+	color: #3C5675;	
+	padding: 0;
+	margin: 15px;
+}
+
+ul.home-nav li a:hover {
+	color: #333;
+	background-color: inherit;
+}
+
+.brand-buttons {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.login-form-con {
+	width: 500px;
+    margin: auto;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.login-form-con .header, .create-category-form-con .header {
+    margin-bottom: 30px;
+    font-size: 23px;
+    color: #323b44;
+    font-weight: 500;
+}
+
+.login-page {
+	padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.features-con {
+	width: 1200px;
+	margin: auto;
+	margin-top: 40px;
+
+	background-color: #fff;
+	padding: 40px;
+	border-radius: 4px;
+	border: 1px solid #ddd;
+}
+
+.features-con .feature-icon {
+	text-align: center;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.features-con .feature-detail .feature-label {
+	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
+	color: #323b44;
+	margin-bottom: 8px;
+	display: block;
+}
+
+.features-con .feature-detail .feature-content {
+	font-size: 15px;
+	color: #323b44;
+}
+
+.feature-item {
+	margin-bottom: 30px;
+}
+
+.brand-page-con {
+    height: 790px;
+    overflow: hidden;
+    border-bottom: 1px solid #d7d7d7;
+    background-color: #d7d7d7;
+    padding: 48px 0px;
+}
+
+.home-con {
+	height: 100%;
+}
+
+#app {
+	height: 100%;
+}
+
+.nothing-found {
+	font-style: italic;
+	text-align: center;
+	font-size: 13px;
+    margin-top: 30px;
+}
+
+.nothing-found .icon {
+	margin-right: 3px;
+}
+
+
+
+.panel-body .nothing-found {
+	margin-top: 0;
+	padding: 15px;
+}
+
+.create-category-form-con {
+	width: 600px; 
+	margin: auto;
+	margin-top: 70px;
+}
+
+.wiki-nav {
+    margin-bottom: 18px;
+	background-color: #fbfbfb;
+	border-bottom: 1px solid #eee;
+	padding: 10px;
+}
+
+.wiki-nav>nav>ul {
+	margin-bottom: 0;
+}
+
+.wiki-nav>nav>ul>li {
+	padding: 0;
+}
+
+.wiki-nav>nav>ul>li>a {
+	font-size: 13px;
+	padding: 8px 8px;
+	border-radius: 2px;
+}
+
+.wiki-nav>nav>ul>li>a .icon {
+	margin-right: 4px;
+    line-height: 9px;
+    font-size: 14px;
+    color: #586069;
+}
+
+.wiki-nav>nav>ul>li>a:hover, .wiki-nav>nav>ul>li>a:focus, .wiki-nav>nav>ul>li>a:active, .wiki-nav>nav>ul>li>a:visited {
+	background-color: #eee;
+	text-decoration: none;
+	border: 1px solid #ddd;
+	margin: -1px;
+	color: #333;
+}
+
+/**************************** jsTree ************************************/
+.jstree-loading {
+	margin-left: 0px !important;
+}
+
+.jstree-loading .jstree-anchor {
+	cursor: default;
+}
+
+.jstree-selected>.jstree-wholerow, .jstree-wholerow-hovered, .jstree-default .jstree-wholerow-clicked, .jstree-wholerow-clicked.jstree-wholerow-hovered {
+    background-color: #f3f3f3 !important;	
+}
+
+
+.jstree-default .jstree-node {
+    margin-left: 15px !important;
+}
+
+.jstree-default>ul>li.jstree-node {
+	margin-left: 0 !important;
+}
+
+.jstree-default .jstree-icon:empty {
+    width: 22px !important;
+}
+
+.jstree-default .jstree-anchor {
+	/*color: #337ab7 !important;*/
+}
+
+#wiki-page-tree {
+	margin-top: -7px !important;
+    /*margin-left: -10px !important;*/
+}
+
+.jstree-default-large > .jstree-no-dots .jstree-closed > .jstree-ocl {
+    background-position: -4px 0px !important;
+}
+
+.jstree-default-large > .jstree-no-dots .jstree-open > .jstree-ocl {
+    background-position: -37px 0px !important;
+}
+
+.jstree-default-large > .jstree-container-ul .jstree-loading > .jstree-ocl {
+	background: url("/img/throbber.gif");
+	background-repeat: no-repeat;
+	background-position: 2px 8px !important;
+}
+
+.jstree-leaf > .jstree-ocl:before {
+    content: '.';
+    color: #717171;
+    font-family: "segoe ui";
+    font-weight: 900;
+    position: relative;
+    top: -3px;
+}
+
+.jstree-default-large > .jstree-container-ul .jstree-loading > .jstree-ocl:before {
+	content: '' !important;
+}
+
+.wiki-comments-con .nothing-found {
+	position: relative;
+	top: 45%;
+}
+
+.wiki-comment-form #comment-input-textarea {
+    resize: none;
+    min-height: 84px;
+    max-height: 115px;
+    font-size: 14px !important;
+    padding: 8px 10px;
+    color: #000;
+}
+
+.atwho-view {
+	background: #fff !important;
+	color: #000 !important;
+	min-width: 165px !important;
+	border-radius: 4px 4px 4px 4px !important;
+	box-shadow: none !important;
+}
+
+.atwho-view-ul li {
+	font-size: 15px;
+	border-color: #ddd !important;
+}
+
+.atwho-view-ul li.cur {
+	background-color: #f5f5f5;
+	color: #000;
+}
+
+.atwho-view-ul li img {
+	margin-right: 5px;
+	width: 27px;
+	height: 27px;
+}
+
+.atwho-view strong {
+	color: #000 !important;
+}
+
+.atwho-header {
+	font-size: 55px;
+}
+
+#spinner {
+	display: none;
+}
+
+.comment-actions {
+	height: 25px;
+	display: flex;
+	align-items: center;
+}
+
+.comment-actions ul {
+	margin-bottom: 0;
+}
+
+.comment-actions ul li a {
+	display: inline-block;
+    margin: 0 .75em 0 0;
+    color: rgba(0,0,0,.4);
+    font-size: 12px;
+}
+
+.comment-actions ul li a:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+.comment-actions>ul>li:after {
+	color: rgba(0,0,0,.4);
+	content: '.';
+    font-weight: 500;
+    position: relative;
+    top: -3px;
+}
+
+.comment-actions>ul>li:last-child:after {
+	content: '';
+}
+
+/******************** Wiki Description Styles *********************/
+
+.markdown-body {
+	min-height: 45px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    word-wrap: break-word;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.markdown-body>*:first-child {
+    margin-top: 0 !important;
+}
+
+.markdown-body h1 {
+    font-size: 2em;
+}
+
+.markdown-body h2 {
+    font-size: 1.5em;
+}
+
+.markdown-body h3 {
+    font-size: 1.25em;
+}
+
+.markdown-body hr {
+	border-top: 1px solid #eaecef;
+	margin: 8px 0px 8px 0px;
+}
+
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 {
+    margin-top: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.markdown-body p, .markdown-body blockquote, .markdown-body ul, .markdown-body ol, .markdown-body dl, .markdown-body table, .markdown-body pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+    padding: 0 1em;
+    color: #6a737d;
+    border-left: 0.25em solid #dfe2e5;
+}
+
+.markdown-body p, .markdown-body blockquote, .markdown-body ul, .markdown-body ol, .markdown-body dl, .markdown-body table, .markdown-body pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+blockquote {
+    margin: 0;
+}
+
+.markdown-body b, .markdown-body strong {
+	font-weight: 500;
+}
+
+.markdown-body pre {
+	margin-top: 10px;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f6f8fa;
+    border-radius: 3px;
+    margin-bottom: 16px;
+    border: none;
+}
+
+.markdown-body pre code {
+	background-color: #f6f8fa !important;	
+	background: #f6f8fa !important;	
+}
+
+.markdown-body pre, .markdown-body code {
+    word-wrap: normal;
+	font-size: 14px;
+	font-family: "Consolas", "Monaco", "SFMono-Regular", "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body ul, .markdown-body ol {
+    padding-left: 2em;
+}
+
+.markdown-body::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.markdown-body table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+}
+
+.markdown-body table, .markdown-body pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.markdown-body table tr {
+    background-color: #fff;
+    border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table th, .markdown-body table td {
+    padding: 6px 13px;
+    border: 1px solid #dfe2e5;
+}
+
+.markdown-body table th {
+    font-weight: 600;
+}
+
+/******************** Markdown *********************/
+
+.select2-dropdown {
+	border-color: #66afe9 !important;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+	border-color: #66afe9 !important;
+}
+
+.select2-container--default .select2-selection--multiple {
+	border-radius: 3px !important;
+}
+
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-bottom: 0px !important;
+    padding-bottom: 3px !important;
+}
+
+.select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-top: 0px !important;
+    padding-top: 3px !important;
+}
+
+.select2-container--default .select2-selection--multiple {
+	border-radius: 1px solid #ccc;
+}
+
+.select2-container--default .select2-selection--multiple {
+    border: 1px solid #ccc !important;
+}
+
+li.with-img img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+li.with-img a {
+	padding: 10px;
+	display: flex;
+	align-items: center;
+}
+
+ul.dot-divider li:first-child:before {
+	content: '';
+	margin-right: 0;
+}
+
+ul.dot-divider li:before {
+    color: #000;
+    content: '.';
+    font-weight: 700;
+    margin-right: 5px;
+    position: relative;
+    top: -3px;
+}
+
+.row.vdivide div[class*="col-"]:not(:last-child):after {
+  background: #e0e0e0;
+  width: 1px;
+  content: "";
+  display:block;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  min-height: 70px;
+}
+
+#remove-invitation {
+	padding: 5px;
+	border-radius: 3px;
+	color: #d43f3a;
+	border: 1px solid #fff;
+}
+
+.recent-wikis-list li:hover #remove-invitation {
+	border-color: rgba(245, 245, 245, 0.69);
+}
+
+#remove-invitation:hover {
+	border: 1px solid #d43f3a !important;
+}
+
+#cke_wiki-description .cke_top {
+    border-bottom: 1px solid #ccc !important;
+    background: #fbfbfb !important;
+}
+
+#cke_wiki-description {
+    border: 1px solid #ccc !important;
+    border-radius: 3px 3px 3px 3px !important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: rgba(224, 224, 224, 0.24) !important;
+    border: 1px solid rgba(152, 152, 152, 0.29) !important;
+    border-radius: 3px !important;
+    padding: 5px 8px !important;
+}
+
+.select2-container .select2-search--inline .select2-search__field {
+    margin: 0px !important;
+    position: relative !important;
+    top: 11px !important;
+}
+
+.page-tags {
+	padding: 0;
+	margin: 0;
+}
+
+.page-tags li {
+	padding-left: 0;
+	padding-right: 2px;
+}
+
+.page-tags li a {
+	font-size: 13px;
+    border-radius: 2px;
+    background-color: #f7f7f9;
+    border: 1px solid #eee;
+    padding: 3.5px 6px;
+}
+
+.page-tags li a:hover {
+	text-decoration: none;
+	color: #333;
+}
+
+.edit-wiki-tags .select2-selection {
+	height: 45px !important;
+}
+
+.notifications-list li {
+	padding: 12px 15px;
+}
+
+.notifications-list li:hover {
+    background-color: #F9F9F9;
+}
+
+.notifications-list li:hover a {
+    color: #333333;
+	text-decoration: none;
+}
+
+i.icon {
+	color: #a5a5a5;
+}
+
+.home-head-btn:nth-of-type(1) {
+	margin-right: 12px;
+}
+
+.home-head-btn {
+	padding: 11px 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-style: solid;
+    background-color: transparent;
+    color: white;
+    font-size: 12px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    transition: all 0.1s;
+}
+
+.home-head-btn:hover {
+    color: white;
+    background-color: transparent;
+	transform: scale(1.05);
+}
+
+.home-nav {
+    text-align: center;
+}
+
+.home-nav ul {
+    margin-bottom: 0;
+}
+
+.home-nav ul li {
+    padding: 0 12px;
+    line-height: 48px;
+}
+
+.home-nav ul li a {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.home-nav ul li a:hover {
+    text-decoration: none;
+}
+
+.footer a {
+    font-weight:normal;
+    line-height: 12px;
+    text-decoration: none;
+    color: #939393;
+    display: inline-block;
+}
+
+.footer a i {
+    font-size:19px;
+}
+
+.footer a:hover {
+    color: #444;
+}
+
+.header-bg {
+    background-image: url(../img/bg.png);
+}
+
+.header-bg ul li a {
+    color: white !important;
+}
